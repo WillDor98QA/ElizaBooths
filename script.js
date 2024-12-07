@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ctaButton.addEventListener('click', () => {
         // Example interaction - you can customize this
-        alert('Thank you for your interest! We will contact you soon.');
+        alert('Contact us using our social media platforms. Thank you.');
     });
 
     // Image Carousel
