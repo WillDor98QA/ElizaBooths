@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    background-color: #ecbc0f;
+    background-color: #c9a938;
     color: #333;
 }
 
@@ -20,7 +20,7 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background-color: #ecbc0f;
+    background-color: #c9a938;
     box-shadow: 1 3px 5px rgba(0,0,0,0.1);
 }
 
@@ -85,7 +85,7 @@ header h1 {
     flex-basis: 30%;
     text-align: center;
     padding: 1rem;
-    background-color: #ecbc0f;
+    background-color: #c9a938;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
