@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const ctaButton = document.getElementById('cta-button');
 
-    ctaButton.addEventListener('click', () => {
-        // Example interaction - you can customize this
-        window.open('Elizabooths brochure_20241211_040021_0000.pdf', '_blank');
+    document.getElementById('pdfButton').addEventListener('click', function() {
+        // Replace with the actual path to your PDF
+        const pdfPath = 'Elizabooths brochure_20241211_040021_0000.pdff';
+
+        // Open PDF in browser
+        window.location.href = 'Elizabooths brochure_20241211_040021_0000.pdf';
     });
 
     // Image Carousel
