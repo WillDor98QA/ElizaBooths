@@ -52,20 +52,24 @@ h6 {
 }
 
 
-#cta-button {
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
     background-color: #ffffff;
-    color: #010000;
+    color: #000000;
+    text-decoration: none;
     border: none;
-    padding: 20px;
-    font-size: 1rem;
     border-radius: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#cta-button:hover {
-    transform: scale(1.05);
-}
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color:  #D7B21D;
+    color: #000000;
+   
+  }
 
 .image-carousel {
     width: 100%; /* Full width of its container */

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ctaButton.addEventListener('click', () => {
         // Example interaction - you can customize this
-        alert('Contact us using our social media platforms. Thank you.');
+        window.open('Elizabooths brochure_20241211_040021_0000.pdf', '_blank');
     });
 
     // Image Carousel
