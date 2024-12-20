@@ -72,21 +72,22 @@ h6 {
    
   }
 
+
 .image-carousel {
-    width: 100%; /* Full width of its container */
-    overflow: hidden; /* Hide overflowing images */
+    width: 100%;
+    overflow: hidden;
 }
 
 .carousel-container {
     display: flex;
-    width: 100%;   /*Full width */
-    overflow-x: scroll;
-    transition: transform 0.5s ease; /* Smooth transition */
+    width: 200%;
+    overflow-x: hidden; /* Change from scroll to hidden */
+    transition: transform 0.5s ease;
 }
 
 .carousel-container img {
-    width: 20%; /* Each image takes full width of container */
-    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 12.5%;
+    flex-shrink: 0;
 }
 
 .features {
@@ -230,4 +231,3 @@ h4 {
     font-size: 30px;
     
 }
-
