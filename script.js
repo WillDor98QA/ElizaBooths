@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Existing PDF button code
   document.getElementById('pdfButton').addEventListener('click', function() {
-      window.location.href = 'Elizabooths brochure_20241211_040021_0000.pdf';
+      window.location.href = 'Elizabooths brochure _20241226_093434_0000.pdf';
   });
 
   // Image Carousel
