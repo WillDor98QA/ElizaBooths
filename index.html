@@ -2,126 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elizabooths</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="Screenshot 2024-12-03 at 12.43.54 AM.png " />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elizabooths</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="Screenshot 2024-12-03 at 12.43.54 AM.png " />
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="Screenshot 2024-12-03 at 12.43.54 AM.png" alt="Company Logo" class="logo">
-            </div>
-            <div>
-                <h1>Welcome to ElizaBooths</h1>
-                <p>Bringing to live your imaginations.</p>
-            </div>
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <img src="Screenshot 2024-12-03 at 12.43.54 AM.png" alt="Company Logo" class="logo">
+      </div>
+      <div>
+        <h1>Welcome to ElizaBooths</h1>
+        <p>Bringing to live your imaginations.</p>
+      </div>
 
-            <section class="hero">
-                <h2>Discover Something Amazing</h2>
-                <h6>Your journey starts here. Learn, grow, and explore.</h6>
-                <button id="pdfButton" class="cta-button">
-                    Need our services? Tap here
-                </button>
+      <section class="hero">
+        <h2>Discover Something Amazing</h2>
+        <h6>Your journey starts here. Learn, grow, and explore.</h6>
+        <button id="pdfButton" class="cta-button">
+          Need our services? Tap here
+        </button>
+    </div>
+  </header>
+  <main>
+
+    <div class="image-carousel">
+      <div class="carousel-container">
+        <img src="WhatsApp Image 2024-12-02 at 23.52.12.jpeg" alt="Carousel Image 1">
+        <img src="WhatsApp Image 2024-12-03 at 00.08.13.jpeg" alt="Carousel Image 5">
+        <img src="WhatsApp Image 2024-12-02 at 23.52.13 (1).jpeg" alt="Carousel Image 2">
+        <img src="WhatsApp Image 2024-12-03 at 00.08.14.jpeg" alt="Carousel Image 5">
+        <img src="WhatsApp Image 2024-12-02 at 23.52.13 (2).jpeg" alt="Carousel Image 3">
+        <img src="WhatsApp Image 2024-12-03 at 00.27.29.jpeg" alt="Carousel Image 4">
+        <img src="WhatsApp Image 2024-12-02 at 23.52.13.jpeg" alt="Carousel Image 5">
+        <img src="WhatsApp Image 2024-12-11 at 13.19.29.jpeg" alt="Carousel Image 7">
+      </div>
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Who we are</h3>
+        <p>Eliza is a lifestyle, and real-time self-discovery travel experience company based in Accra, Ghana.
+          Our
+          in-depth experience in Ghana and the world’s hospitality industry, guarantees our customers
+          gratification of the full
+          freedom to adventure.</p>
+      </div>
+      <div class="feature">
+        <h3>Our Mission</h3>
+        <p>At Elizabooth's, our mission is to create
+          unforgettable memories through fun,
+          innovative, and personalized photo booth
+          experiences. We are dedicated to bringing
+          joy, creativity, and seamless service to
+          every event, ensuring your special
+          moments are captured in style and
+          cherished forever.".</p>
+      </div>
+      <div class="feature">
+        <h3>Services</h3>
+        <p>We take responsibility in making you the star of your own magazine!
+          Enter a world of picture-perfect
+          memories with our premium photo
+          booth, designed to deliver unmatched
+          quality and create unforgettable
+          experiences!</p>
+
+      </div>
+
+    </section>
+
+    <!-- Booking Section -->
+    <!-- <section id="booking" class="bg-purple-100 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Book Us</h2>
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+          <form id="bookingForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block mb-2">First Name</label>
+                <input type="text" name="name" placeholder="Enter your first name"
+                  class="form-input w-full p-2 border rounded" required>
+              </div>
+              <div>
+                <label class="block mb-2">Last Name</label>
+                <input type="text" name="name" placeholder="Enter your last name"
+                  class="form-input w-full p-2 border rounded" required>
+              </div>
+              <div>
+                <label class="block mb-2">Email</label>
+                <input type="email" name="email" placeholder="abc@example.com"
+                  class="form-input w-full p-2 border rounded" required>
+              </div>
+              <div>
+                <label class="block mb-2">Phone Number</label>
+                <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" minlength="10"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Enter a valid phone number"
+                  class="form-input w-full p-2 border rounded" required>
+              </div>
+              <div>
+                <label class="block mb-2">Service</label>
+                <select name="service" class="form-input w-full p-2 border rounded" required>
+                  <option value="">Select a service</option>
+                  <option>Box Braids</option>
+                  <option>Faux locs</option>
+                  <option>Goddess Braids</option>
+                  <option>Knotless Braids</option>
+                </select>
+              </div>
+              <div>
+                <label class="block mb-2">Size</label>
+                <select name="size" class="form-input w-full p-2 border rounded" required>
+                  <option value="">Select a size</option>
+                  <option>Jumbo</option>
+                  <option>Medium</option>
+                  <option>Small</option>
+                  <option>Extra Small</option>
+                </select>
+              </div>
+              <div>
+                <label class="block mb-2">Preferred Date</label>
+                <input type="date" name="date" class="form-input w-full p-2 border rounded" required>
+              </div>
+              <div>
+                <label class="block mb-2">Preferred Time</label>
+                <select name="time" class="form-input w-full p-2 border rounded" required>
+                  <option value="">Select prefered time</option>
+                  <option value="07:00">7:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="15:00">3:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-6">
+              <button type="submit" class="w-full bg-black text-white py-3 rounded custom-hover transition-colors duration-200">
+                <span>Book Now</span>
+                <div class="spinner hidden"></div>
+              </button>
+            </div>
+          </form>
         </div>
-    </header>
-    <main>
+      </div>
+    </section> -->
 
-        <div class="image-carousel">
-            <div class="carousel-container">
-                <img src="WhatsApp Image 2024-12-02 at 23.52.12.jpeg" alt="Carousel Image 1">
-                <img src="WhatsApp Image 2024-12-03 at 00.08.13.jpeg" alt="Carousel Image 5">
-                <img src="WhatsApp Image 2024-12-02 at 23.52.13 (1).jpeg" alt="Carousel Image 2">
-                <img src="WhatsApp Image 2024-12-03 at 00.08.14.jpeg" alt="Carousel Image 5">
-                <img src="WhatsApp Image 2024-12-02 at 23.52.13 (2).jpeg" alt="Carousel Image 3">
-                <img src="WhatsApp Image 2024-12-03 at 00.27.29.jpeg" alt="Carousel Image 4">
-                <img src="WhatsApp Image 2024-12-02 at 23.52.13.jpeg" alt="Carousel Image 5">
-                <img src="WhatsApp Image 2024-12-11 at 13.19.29.jpeg" alt="Carousel Image 7">
-            </div>
+
+    <div>
+
+      <h4>Contact Us</h4>
+
+    </div>
+    </social media>
+    <div class="buttons v-center"><a class="button-link" href="" target="_blank" title="manifest">
+      </a><a class="button-link" href="https://www.instagram.com/_elizatravels/profilecard/?igsh=MWZjdXd0OGt0bG5nMg=="
+        target="_blank" title="Share on instagram">
+        <div class="button no-btext-button"
+          style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img src="Instagram 2.png"
+            style="height:16px;width:16px">
+          <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
         </div>
 
-        <section class="features">
-            <div class="feature">
-                <h3>Who we are</h3>
-                <p>Eliza is a lifestyle, and real-time self-discovery travel experience company based in Accra, Ghana.
-                    Our
-                    in-depth experience in Ghana and the world’s hospitality industry, guarantees our customers
-                    gratification of the full
-                    freedom to adventure.</p>
-            </div>
-            <div class="feature">
-                <h3>Our Mission</h3>
-                <p>At Elizabooth's, our mission is to create
-                    unforgettable memories through fun,
-                    innovative, and personalized photo booth
-                    experiences. We are dedicated to bringing
-                    joy, creativity, and seamless service to
-                    every event, ensuring your special
-                    moments are captured in style and
-                    cherished forever.".</p>
-            </div>
-            <div class="feature">
-                <h3>Services</h3>
-                <p>We take responsibility in making you the star of your own magazine!
-                    Enter a world of picture-perfect
-                    memories with our premium photo
-                    booth, designed to deliver unmatched
-                    quality and create unforgettable
-                    experiences!</p>
-
-            </div>
-
-        </section>
-        
-        <div>
-        
-            <h4>Contact Us</h4>
-            
+      </a><a class="button-link" href="mailto:elizatravelandtours@gmail.com" target="_blank" title="Share via mail">
+        <div class="button no-btext-button"
+          style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img
+            src="icons8-email-outline-64.png" style="height:16px;width:16px">
+          <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
         </div>
-     </social media>
-     <div class="buttons v-center"><a class="button-link" href="" target="_blank" title="manifest">
-         </a><a class="button-link" href="https://www.instagram.com/_elizatravels/profilecard/?igsh=MWZjdXd0OGt0bG5nMg==" target="_blank" title="Share on instagram">
-            <div class="button no-btext-button" style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img src="Instagram 2.png" style="height:16px;width:16px">
-              <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
-            </div>
-        
-          </a><a class="button-link" href="mailto:elizatravelandtours@gmail.com" target="_blank" title="Share via mail">
-            <div class="button no-btext-button" style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img src="icons8-email-outline-64.png" style="height:16px;width:16px">
-              <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
-            </div>
-          
-          </a><a class="button-link" href="https://x.com/tourseliza?s=11&t=GywLs74c1z8i9d86mljs5g" target="_blank" title="Share on X">
-            <div class="button no-btext-button" style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img src="https://assets.seen.io/static/landingpages/npp-one-off/images/twitter.png" style="height:16px;width:16px">
-              <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
-            </div>
 
-            </a><a class="button-link" href="https://elizatravels.com/" target="_blank" title="Visit website">
-            <div class="button no-btext-button" style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img src="icons8-website-50.png" style="height:16px;width:16px">
-              <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
-            </div>
+      <!-- </a><a class="button-link" href="https://x.com/tourseliza?s=11&t=GywLs74c1z8i9d86mljs5g" target="_blank"
+        title="Share on X">
+        <div class="button no-btext-button"
+          style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img
+            src="https://assets.seen.io/static/landingpages/npp-one-off/images/twitter.png"
+            style="height:16px;width:16px">
+          <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
+        </div> -->
 
-             </a><a class="button-link" href="tel:+233 20 865 9276" target="_blank" title="contact number">
-            <div class="button no-btext-button" style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img src="icons8-outgoing-call-80.png" style="height:16px;width:16px">
-              <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
-            </div>
-        
-          </a></div>
-        <div class="v-center">
-     </social media>
-        
+      </a><a class="button-link" href="https://elizatravels.com/" target="_blank" title="Visit website">
+        <div class="button no-btext-button"
+          style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img
+            src="icons8-website-50.png" style="height:16px;width:16px">
+          <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
+        </div>
 
-        
-    </main>
+      </a><a class="button-link" href="tel:+233 20 865 9276" target="_blank" title="contact number">
+        <div class="button no-btext-button"
+          style="padding-left:16px;background:#000000;display:flex;margin:0 4px;height:100%"><img
+            src="icons8-outgoing-call-80.png" style="height:16px;width:16px">
+          <div class="buttonLabel no-btext-icon" style="color:#ffffff;font-size:14px"></div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 elizabooths. All rights reserved.</p>
-    </footer>
+      </a></div>
+    <div class="v-center">
+      </social media>
 
-    <script src="script.js"></script>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 elizabooths. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
